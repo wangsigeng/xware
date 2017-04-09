@@ -1,0 +1,9 @@
+version: '2'
+services:
+  xware-Videos:
+    container_name: xware-container
+    build: ./xware
+    image: 'xware:latest'
+    volumes:
+      - /TDDOWNLOAD:/data/TDDOWNLOAD
+    restart: always
